@@ -1,0 +1,20 @@
+{
+  "name": "Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michael-ciniawsky/website.git"
+  },
+  "scripts": {
+    "install": "sudo npm install -g gulp && sudo npm install --save",
+    "start": "gulp",
+    "test":  "gulp test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "Michael Ciniawsky <michael.ciniawsky@gmail.com>",
+  "license": "MIT"
+}
