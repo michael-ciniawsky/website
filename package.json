@@ -9,9 +9,9 @@
   "scripts": {
     "test": "echo '=> Testing App'",
     "build": "echo '=> Building App' && gulp",
-    "bundle": "echo '=> Bundling App' && NODE_ENV=Production webpack --config .gir/webpack.config.js",
-    "serve": "echo '=> Starting App' && NODE_ENV=Development webpack-dev-server --config .gir/webpack.config.js",
-    "start": "echo '=> Running App' && nodemon --exec babel-node server"
+    "bundle": "echo '=> Bundling App' && NODE_ENV=Production webpack --config webpack.config.js",
+    "serve": "echo '=> Starting App' && NODE_ENV=Development webpack-dev-server --config webpack.config.js",
+    "start": "echo '=> Running App' && nodemon --exec node server"
   },
   "babel": {
     "presets": [
@@ -23,6 +23,7 @@
     "body-parser": "^1.14.2",
     "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
+    "express-posthtml": "^1.0.3",
     "express-session": "^1.12.1",
     "history": "^2.0.1",
     "morgan": "^1.6.1",
