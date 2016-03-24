@@ -1,9 +1,73 @@
 {
-  "name": "Website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "private": true,
+  "name": "michael-ciniawsky.de",
+  "version": "0.0.1",
+  "description": "Website",
+  "main": "server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "echo '=> Testing App'",
+    "build": "echo '=> Building App' && gulp",
+    "bundle": "echo '=> Bundling App' && NODE_ENV=Production webpack --config .gir/webpack.config.js",
+    "serve": "echo '=> Starting App' && NODE_ENV=Development webpack-dev-server --config .gir/webpack.config.js",
+    "start": "echo '=> Running App' && nodemon --exec babel-node server"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.12.1",
+    "history": "^2.0.1",
+    "morgan": "^1.6.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.1",
+    "serve-favicon": "^2.3.0",
+    "serve-static": "^1.10.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.0",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.4.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-inject": "^4.0.0",
+    "gulp-load-plugins": "^1.0.0",
+    "gulp-load-tasks": "^0.8.4",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-posthtml": "^1.5.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-standard": "^6.0.5",
+    "gulp-uglify": "^1.5.2",
+    "gulp-useref": "^3.0.5",
+    "html-webpack-plugin": "^2.14.0",
+    "postcss-loader": "^0.8.0",
+    "style-loader": "^0.13.0",
+    "svg-loader": "0.0.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-notifier": "^1.2.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/michael-ciniawsky/website.git"
