@@ -14,6 +14,11 @@
   <script src="{{script}}"></script>
   <script src="{{vendor}}"></script>
   <script src="{{bundle}}"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service_worker.js');
+    }
+  </script>
 </body>
 
 </html>

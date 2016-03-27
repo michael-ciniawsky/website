@@ -2,6 +2,11 @@
 # https://help.github.com/articles/ignoring-files
 # Example .gitignore files: https://github.com/github/gitignore
 
-/bower_components/
-/node_modules/
-/.DS_Store/
+.DS_Store
+
+# NodeJS
+
+node_modules
+bower_components
+.nyc_output
+coverage
