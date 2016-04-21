@@ -1,14 +1,13 @@
 'use strict'
 
-var config = require('.gir/webpack/config')
-var entrys = require('.gir/webpack/entrys')
-var output = require('.gir/webpack/output')
-var modules = require('.gir/webpack/loaders')
-var plugins = require('.gir/webpack/plugins')
-var server = require('.gir/webpack/server')
+const config = require('.gir/webpack/config')
+const entrys = require('.gir/webpack/entrys')
+const output = require('.gir/webpack/output')
+const modules = require('.gir/webpack/loaders')
+const plugins = require('.gir/webpack/plugins')
 
-var postHTML = require('.gir/webpack/loaders/posthtml')
-var postCSS = require('.gir/webpack/loaders/postcss')
+const PostHTML = require('.gir/webpack/loaders/settings').posthtml
+const PostCSS = require('.gir/webpack/loaders/postcss').postcss
 
 console.log(`CWD: ${process.cwd()}`)
 console.log(`ENV: ${process.env.NODE_ENV}`)
@@ -22,7 +21,6 @@ module.exports = {
   output: output,
   module: modules,
   plugins: plugins,
-  devServer: server,
-  postcss: postCSS,
-  posthtml: postHTML
+  postcss: PostCSS,
+  posthtml: PostHTML
 }
