@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>{{title}}</title>
   <link rel="stylesheet" href="{{css}}" />
-  <noscript>Javascript disabled!</noscript>
+  <noscript>Please enable JS in your Browser</noscript>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
   <script src="{{bundle}}"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service_worker.js');
+      navigator.serviceWorker.register('/worker.js');
     }
   </script>
 </body>
