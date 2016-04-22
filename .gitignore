@@ -6,7 +6,12 @@
 
 # NodeJS
 
+.nyc_output
+
+coverage
 node_modules
 bower_components
-.nyc_output
-coverage
+
+# APP
+
+public/*.js
