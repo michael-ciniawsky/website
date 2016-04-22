@@ -1,14 +1,14 @@
 'use strict'
 
-const config = require('.gir/webpack/config')
-const entrys = require('.gir/webpack/entrys')
-const output = require('.gir/webpack/output')
-const modules = require('.gir/webpack/loaders')
-const plugins = require('.gir/webpack/plugins')
-const server = require('.gir/webpack/server')
+const config = require('./.gir/webpack/config')
+const entrys = require('./.gir/webpack/entrys')
+const output = require('./.gir/webpack/output')
+const modules = require('./.gir/webpack/loaders')
+const plugins = require('./.gir/webpack/plugins')
+const server = require('./.gir/webpack/server')
 
-const PostHTML = require('.gir/webpack/loaders/settings').posthtml
-const PostCSS = require('.gir/webpack/loaders/postcss').postcss
+const PostHTML = require('./.gir/webpack/loaders/settings').posthtml
+const PostCSS = require('./.gir/webpack/loaders/settings').postcss
 
 console.log(`CWD: ${process.cwd()}`)
 console.log(`ENV: ${process.env.NODE_ENV}`)
