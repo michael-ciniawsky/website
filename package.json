@@ -10,8 +10,8 @@
     "test": "echo '=> Linting' standard && nyc ava './test/**/*.test.js' --require ./test/ava-setup.js",
     "cover": "echo '=> Coverage' && nyc --reporter=lcov --reporter=text npm run test",
     "builds": "echo '=> Building' && gulp",
-    "bundle": "echo '=> Bundling' && NODE_ENV=Production webpack --config webpack.config.js",
-    "serve": "echo '=> Starting DEV' && NODE_ENV=Development webpack-dev-server --config webpack.config.server.js",
+    "bundle": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
+    "serve": "echo '=> Starting DEV' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
     "start": "echo '=> Starting Server' && nodemon --exec node server"
   },
   "ava": {},
