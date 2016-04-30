@@ -9,8 +9,7 @@
   },
   "scripts": {
     "pretest": "echo '=> Linting' && standard",
-    "test": "echo '=> Testing' && ava './client/**/*.test.js'",
-    "cover": "echo '=> Coverage' && nyc npm run test --reporter=text-lcov",
+    "test": "echo '=> Testing' && nyc ava './client/**/*.test.js'",
     "build": "echo '=> Building' && NODE_ENV=development webpack --config webpack.config.js",
     "serve": "echo '=> Starting DEV' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
     "prestart": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
