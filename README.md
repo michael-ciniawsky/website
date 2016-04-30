@@ -11,7 +11,7 @@
 |:-----------------:|:----------------------:|:---------------------:|
 |  Master           | ![travis]              | ![cover]              |
 |  Develop          | ![travis-dev]          | ![cover-dev]          |
-|  Release 1.0.0    | ![travis-rel-1.0.0]    | ![cover-rel-1.0.0]    |
+|  Release/1.0.0    | ![travis-rel-1.0.0]    | ![cover-rel-1.0.0]    |
 
 ## Setup
 
@@ -47,7 +47,7 @@ $ npm run build
 $ npm run serve
 ```
 
-[node]: https://img.shields.io/node/v/website.svg
+[node]: https://img.shields.io/node/v/gh-badges.svg?maxAge=2592000
 [node-url]: https://nodejs.org
 
 [deps]: https://david-dm.org/michael-ciniawsky/website.svg
@@ -56,8 +56,8 @@ $ npm run serve
 [style]: https://img.shields.io/badge/code%20style-standard-yellow.svg
 [style-url]: http://standardjs.com/
 
-[license]: https://img.shields.io/npm/l/website.svg
-[license-url]: https://raw.githubusercontent.com/michael-ciniawsky/website/develop/LICENSE
+[license]:  	https://img.shields.io/github/license/michael-ciniawsky/website.svg
+[license-url]: https://raw.githubusercontent.com/michael-ciniawsky/website/master/LICENSE
 
 [travis]:https://travis-ci.org/michael-ciniawsky/website.svg?branch=master
 [travis-url]:https://travis-ci.org/michael-ciniawsky/website?branch=master
