@@ -3,13 +3,12 @@
 [![Standard Code Style][style]][style-url]
 ![License MIT][license]
 
+# [Website](http://michael-ciniawsky.de)
+
 | Master | Develop | Release |
 |:------:|:-------:|:-------:|
 | ![travis] | ![travis-dev] | ![travis-rel] |
 | ![cover]  | ![cover-dev]  | ![cover-rel]  |
-
-# Website
-Resume, Portfolio & Blog | [Michael Ciniawsky](http://michael-ciniawsky.de/)
 
 ## Setup
 Install [Node](http://nodejs.org) && [npm](http://npmjs.org)
@@ -17,7 +16,7 @@ Install [Node](http://nodejs.org) && [npm](http://npmjs.org)
 ## Install
 
 ```bash
-$ (sudo) npm i
+$ npm i
 ```
 
 ## Build
@@ -26,19 +25,19 @@ $ (sudo) npm i
 $ npm run build
 ```
 
-## Serve
+## Develop
 
 ```bash
-$ npm run serve // NODE_ENV=Development
+$ npm run serve
 ```
 
-## Bundle
+## Test
 
 ```bash
-$ npm run bundle  // NODE_ENV=Production
+$ npm run test
 ```
 
-## Server
+## Start
 
 ```bash
 $ npm start
