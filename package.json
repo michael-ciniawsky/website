@@ -7,18 +7,37 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "echo '=> Linting' standard && nyc ava './test/**/*.test.js' --require ./test/ava-setup.js",
+    "lint": "echo '=> Linting' && standard",
+    "test": "echo '=> Testing' && ava './client/**/*.test.js'",
     "cover": "echo '=> Coverage' && nyc --reporter=lcov --reporter=text npm run test",
     "builds": "echo '=> Building' && gulp",
     "bundle": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
     "serve": "echo '=> Starting DEV' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
     "start": "echo '=> Starting Server' && nodemon --exec node server"
   },
-  "ava": {},
+  "ava": {
+    "babel": "inherit"
+  },
+  "nyc": {
+    "all": true,
+    "require": "babel-register",
+    "include": [
+      "client/app/**/**"
+    ],
+    "extension": [
+      ".jsx"
+    ]
+  },
   "babel": {
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    },
+    "plugins": [],
     "presets": [
-      "react",
-      "es2015"
+      "es2015",
+      "react"
     ]
   },
   "dependencies": {
@@ -29,7 +48,9 @@
     "express-session": "^1.12.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
-    "react-router": "^2.0.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.4.0",
+    "redux": "^3.5.2",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
@@ -56,12 +77,15 @@
     "gulp-rename": "^1.2.2",
     "gulp-size": "^2.0.0",
     "html-webpack-plugin": "^2.14.0",
-    "nyc": "^6.1.1",
+    "nyc": "^6.4.0",
     "postcss-bem": "^0.4.1",
     "postcss-loader": "^0.8.0",
     "posthtml-bem": "^0.2.2",
     "standard": "^6.0.8",
     "style-loader": "^0.13.0",
+    "stylefmt": "^3.2.1",
+    "stylelint": "^6.2.2",
+    "stylelint-config-standard": "^6.0.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
