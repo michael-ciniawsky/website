@@ -5,6 +5,8 @@
 
 # [Website](http://michael-ciniawsky.de)
 
+## Status
+
 | Master | Develop | Release v1.0.0 |
 |:------:|:-------:|:--------------:|
 | ![travis] | ![travis-dev] | ![travis-rel] |
@@ -13,31 +15,31 @@
 ## Setup
 Install [Node](http://nodejs.org) && [npm](http://npmjs.org)
 
-## Install
+#### Install
 
 ```bash
 $ npm i
 ```
 
-## Build
+#### Build
 
 ```bash
 $ npm run build
 ```
 
-## Develop
+#### Develop
 
 ```bash
 $ npm run serve
 ```
 
-## Test
+#### Test
 
 ```bash
 $ npm run test
 ```
 
-## Start
+#### Start
 
 ```bash
 $ npm start
