@@ -11,9 +11,9 @@
     "lint": "echo '=> Linting' && standard",
     "test": "echo '=> Testing' && ava './client/**/*.test.js'",
     "cover": "echo '=> Coverage' && nyc --reporter=lcov --reporter=text npm run test",
-    "builds": "echo '=> Building' && gulp",
-    "bundle": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
+    "build": "echo '=> Building' && NODE_ENV=development webpack --config webpack.config.js",
     "serve": "echo '=> Starting DEV' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
+    "prestart": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
     "start": "echo '=> Starting Server' && nodemon --exec node server"
   },
   "ava": {
