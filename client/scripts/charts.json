@@ -1,0 +1,32 @@
+{
+  "html": {
+    "labels": ["HTML 5", "ARIA", "Components"],
+    "datasets": [{
+      "fillColor": "rgba(255, 185, 100, 0.9)",
+      "strokeColor": "rgba(255, 185, 100, 1)",
+      "highlightFill": "rgba(255, 150, 52, 0.9)",
+      "highlightStroke": "rgba(255, 150, 52, 1)",
+      "data": ["90", "40", "70"]
+    }]
+  },
+  "css": {
+    "labels": ["Bootstrap", "Foundation"],
+    "datasets": [{
+      "fillColor": "rgba(240, 71, 71, 0.83)",
+      "strokeColor": "rgba(240, 71, 71, 1)",
+      "highlightFill": "rgba(240, 71, 71, 0.75)",
+      "highlightStroke": "rgba(240, 71, 71, 1)",
+      "data": ["80", "80", "70", "70"]
+    }]
+  },
+  "js": {
+    "labels": ["jQuery", "React", "Meteor"],
+    "datasets": [{
+      "fillColor": "rgba(240, 71, 71, 0.83)",
+      "strokeColor": "rgba(240, 71, 71, 1)",
+      "highlightFill": "rgba(240, 71, 71, 0.75)",
+      "highlightStroke": "rgba(240, 71, 71, 1)",
+      "data": ["70", "80", "50", "30", "70"]
+    }]
+  }
+}
