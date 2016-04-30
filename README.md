@@ -5,8 +5,8 @@
 
 # [Website](http://michael-ciniawsky.de)
 
-| Master | Develop | Release |
-|:------:|:-------:|:-------:|
+| Master | Develop | Release v1.0.0 |
+|:------:|:-------:|:--------------:|
 | ![travis] | ![travis-dev] | ![travis-rel] |
 | ![cover]  | ![cover-dev]  | ![cover-rel]  |
 

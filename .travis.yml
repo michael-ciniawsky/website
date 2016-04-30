@@ -2,5 +2,9 @@ language: node_js
 node_js:
   - v6
   - v4
+before_script:
+  - npm i
+script:
+  - npm run cover
 after_success:
 - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
