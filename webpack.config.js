@@ -7,7 +7,7 @@ const modules = require('./.gir/webpack/loaders')
 const plugins = require('./.gir/webpack/plugins')
 
 const PostHTML = require('./.gir/webpack/loaders/settings').posthtml
-const PostCSS = require('./.gir/webpack/loaders/setting').postcss
+const PostCSS = require('./.gir/webpack/loaders/settings').postcss
 
 console.log(`CWD: ${process.cwd()}`)
 console.log(`ENV: ${process.env.NODE_ENV}`)
