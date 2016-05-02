@@ -1,10 +1,10 @@
 'use strict'
 
-let path = require('path')
+const path = require('path')
 
-let Webpack = require('webpack')
-let WebpackNotify = require('webpack-notifier')
-let WebpackHTML = require('html-webpack-plugin')
+const Webpack = require('webpack')
+const WebpackNotify = require('webpack-notifier')
+const WebpackHTML = require('html-webpack-plugin')
 
 module.exports = [
   // new WebpackHTML({

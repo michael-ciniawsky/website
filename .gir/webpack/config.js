@@ -4,7 +4,7 @@ module.exports = {
   cache: true,
   context: path.join(process.cwd(), 'client'),
   resolve: {
-    extensions: ['', 'html', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   devtool: 'eval-source-map'
 }
