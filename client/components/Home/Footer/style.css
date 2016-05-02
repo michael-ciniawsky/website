@@ -1,0 +1,15 @@
+/* ------------------------------------ *\
+    #FOOTER
+\* ------------------------------------ */
+
+@component footer {
+  display: flex;
+  justify-content: center;
+
+  color: white;
+  
+  font-size: 3rem;
+  font-weight: 100;
+
+  letter-spacing: .1rem
+}

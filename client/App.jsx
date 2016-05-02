@@ -1,5 +1,5 @@
 import {render} from 'react-dom'
 
-import Router from './app/router'
+import Router from './Router'
 
 render(Router, document.getElementById('root'))

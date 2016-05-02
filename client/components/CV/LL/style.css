@@ -1,0 +1,54 @@
+/* ------------------------------------ *\
+       #LEBENSLAUF
+\* ------------------------------------ */
+
+#ll {
+
+  background-image: url('/media/image/png/classy-fabric.png')
+
+}
+
+@component ll {
+
+  @Descendant slide {
+
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+    height: 90%;
+
+    background-color: #333;
+    opacity: 0.4;
+
+  }
+
+  @descendent header {
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+  }
+
+  @descendent title {
+
+    margin: 0 auto;
+    padding: 1rem;
+
+    border-top: .1rem solid white;
+    border-bottom: .1rem solid white;
+
+    color: white;
+
+    font-size: 3rem;
+    font-weight: 100;
+
+    text-align: center;
+    word-spacing: .2rem;
+    letter-spacing: .2rem;
+
+  }
+
+}

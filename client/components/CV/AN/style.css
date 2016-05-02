@@ -1,0 +1,58 @@
+/* ------------------------------------ *\
+    #ANSCHREIBEN
+\* ------------------------------------ */
+
+#an {
+  background-color: green;
+}
+
+.an {
+  background-color: red;
+}
+
+
+.an__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  background-color: #333;
+  opacity: 0.4;
+}
+
+
+.an__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.an__title {
+  padding: 1rem;
+  border-top: .1rem solid white;
+  border-bottom: .1rem solid white;
+
+  color: white;
+
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+  word-spacing: .2rem;
+  letter-spacing: .2rem;
+}
+
+
+.an__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 70%;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  word-spacing: .1rem;
+  letter-spacing: .5rem;
+}

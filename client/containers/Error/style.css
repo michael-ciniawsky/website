@@ -1,0 +1,24 @@
+/* ------------------------------------ *\
+    #ERROR
+\* ------------------------------------ */
+
+@component error {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(180deg, rgb(110, 224, 194), rgb(247, 223, 95), rgb(14, 236, 216));
+  background-size: cover;
+
+  @descendent text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+}

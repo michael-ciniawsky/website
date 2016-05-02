@@ -1,0 +1,58 @@
+/* ------------------------------------ *\
+       #NAV
+\* ------------------------------------ */
+
+@component nav {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100vw;
+  height: 10vh;
+
+  background-color:  yellow;
+
+  @descendent list {
+    display: flex;
+
+    width: 50%;
+  }
+
+  @descendent link {
+    display: flex;
+
+    width: 100%;
+  }
+
+  @descendent item {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    flex: 1 1 25%;
+    flex-flow: row nowrap;
+
+
+    width: 100%;
+  }
+
+  @descendent left {
+    align-self: flex-start;
+  }
+
+  @descendent right {
+    align-self: flex-end;
+  }
+
+  @descendent dropdown {
+    display: none;
+    flex-flow: column;
+  }
+}
+
+@component dropdown {
+  display: none;
+
+  @descendent item {
+    display: none;
+  }
+}
