@@ -1,7 +1,7 @@
 'use strict'
 
 // PostHTML Plugins
-let bem = require('posthtml-bem')
+const bem = require('posthtml-bem')
 
 exports.posthtml = function () {
   return {
@@ -9,11 +9,15 @@ exports.posthtml = function () {
   }
 }
 
+// PostCSS Syntax
+const sugarss = require('sugarss')
+
 // PostCSS Plugins
-let $bem = require('postcss-bem')
+const $bem = require('postcss-bem')
 
 exports.postcss = function () {
   return {
+    syntax: sugarss,
     standard: [
       $bem({
         defaultNamespace: undefined,

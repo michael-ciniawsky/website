@@ -5,7 +5,7 @@ module.exports = {
       loader: 'html!posthtml?pack=standard'
     },
     {
-      test: /\.css$/,
+      test: /\.(sss|css)$/,
       loader: 'style!css?modules!postcss?pack=standard'
     },
     {
