@@ -80,6 +80,7 @@
     "stylefmt": "^3.2.1",
     "stylelint": "^6.2.2",
     "stylelint-config-standard": "^6.0.0",
+    "sugarss": "^0.1.3",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1",
