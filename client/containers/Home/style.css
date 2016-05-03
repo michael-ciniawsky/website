@@ -1,5 +1,15 @@
 /* ------------------------------------ *\
-    #HOME
+   #HOME
 \* ------------------------------------ */
 
-@component home {}
+.home {
+  display: flex;
+
+  width: 100vw;
+  height: auto;
+  margin-top: 10%;
+
+  justify-content: center;
+
+  background-color: rgb(6, 98, 208);
+}

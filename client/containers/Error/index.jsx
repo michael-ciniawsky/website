@@ -7,7 +7,7 @@ class Error extends React.Component {
     return (
       <div className={css.error}>
         <section className={css.error__text}>
-          <h1>Page Not Found</h1>
+          <h1>404 | Page Not Found</h1>
           <p>Sorry, but the page you were trying to view does not exist.</p>
         </section>
       </div>

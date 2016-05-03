@@ -1,14 +1,18 @@
 import React from 'react'
-import {render} from 'react-dom'
+import { render } from 'react-dom'
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
-// import Router from './Router'
+import App from './containers/App'
+import Home from './containers/Home'
+import Error from './containers/Error'
+import CV from './containers/CV'
 
-class App extends React.Component {
-  render () {
-    return (
-      <div className='app'>App</div>
-    )
-  }
-}
-
-render(<App />, document.getElementById('root'))
+render((
+  <Router history={browserHistory}>
+    <Route path='/' component={App}>
+      <Route path='/404' component={Error} />
+      <Route path='/home' component={Home} />
+      <Route path='/cv' component={CV} />
+    </Route>
+  </Router>),
+  document.getElementById('root'))

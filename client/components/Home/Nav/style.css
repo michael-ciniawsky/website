@@ -1,3 +1,17 @@
 /* ------------------------------------ *\
-    #NAV
+   #NAV
 \* ------------------------------------ */
+
+.nav {
+  display: flex;
+
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+.nav__item {
+  color: rgb(218, 255, 243);
+  font-size: 1em;
+  font-weigth: 100;
+}

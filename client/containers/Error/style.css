@@ -11,13 +11,13 @@
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(180deg, rgb(110, 224, 194), rgb(247, 223, 95), rgb(14, 236, 216));
+  background: linear-gradient(90deg, rgb(172, 81, 81), rgb(62, 39, 4));
   background-size: cover;
 
   @descendent text {
     display: flex;
-    flex-direction: column;
 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
