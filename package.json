@@ -16,7 +16,8 @@
     "start": "echo '=> Starting Server' && nodemon --exec node server"
   },
   "ava": {
-    "babel": "inherit"
+    "babel": "inherit",
+    "source": "['!public/**/*']"
   },
   "nyc": {
     "all": true,
