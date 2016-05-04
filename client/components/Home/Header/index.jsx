@@ -1,10 +1,6 @@
 
-import css from './style.css'
-
-const Header = (props, ctx) => {
+export function Header (props) {
   return (
-    <header className={css.header}>{props.header}</header>
+    <header className='header'>{props.header}</header>
   )
 }
-
-export default Header
