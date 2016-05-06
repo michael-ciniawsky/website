@@ -17,36 +17,21 @@
   },
   "ava": {
     "babel": "inherit",
-    "source": "['!public/**/*']"
+    "source": ["!public"]
   },
   "nyc": {
     "all": true,
     "require": "babel-register",
-    "include": [
-      "client/app"
-    ],
-    "extension": [
-      ".jsx"
-    ]
+    "include": ["client"],
+    "extension": [".jsx"]
   },
   "standard": {
-    "ignore": [
-      "client/",
-      "server/",
-      "public/",
-      "server.js"
-    ]
+    "ignore": ["client", "server", "public", "server.js"]
   },
   "babel": {
-    "env": {
-      "development": {
-        "sourceMaps": "inline"
-      }
+    "env": {"development": {"sourceMaps": "inline"}
     },
-    "presets": [
-      "es2015",
-      "react"
-    ]
+    "presets": ["es2015", "react"]
   },
   "dependencies": {
     "body-parser": "^1.14.2",
@@ -91,13 +76,6 @@
     "type": "git",
     "url": "https://github.com/michael-ciniawsky/website.git"
   },
-  "scripts": {
-    "install": "sudo npm install -g gulp && sudo npm install --save",
-    "start": "gulp",
-    "test":  "gulp test"
-  },
-  "dependencies": {},
-  "devDependencies": {},
   "author": "Michael Ciniawsky <michael.ciniawsky@gmail.com>",
   "license": "MIT"
 }
