@@ -17,21 +17,38 @@
   },
   "ava": {
     "babel": "inherit",
-    "source": ["!public"]
+    "source": [
+      "!public"
+    ]
   },
   "nyc": {
     "all": true,
     "require": "babel-register",
-    "include": ["client"],
-    "extension": [".jsx"]
+    "include": [
+      "client"
+    ],
+    "extension": [
+      ".jsx"
+    ]
   },
   "standard": {
-    "ignore": ["client", "server", "public", "server.js"]
+    "ignore": [
+      "client",
+      "server",
+      "public",
+      "server.js"
+    ]
   },
   "babel": {
-    "env": {"development": {"sourceMaps": "inline"}
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
     },
-    "presets": ["es2015", "react"]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "dependencies": {
     "body-parser": "^1.14.2",
@@ -39,6 +56,7 @@
     "express": "^4.13.4",
     "express-posthtml": "^1.0.3",
     "express-session": "^1.12.1",
+    "immutable": "^3.8.1",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.5",
