@@ -12,7 +12,7 @@ import Header from './components/Home/Header'
 
 import css from './index.css'
 
-// class Root extends React.Component {
+// class App extends React.Component {
 //   render () {
 //     return (
 //       <div className={css.app}>
@@ -24,11 +24,7 @@ import css from './index.css'
 //             <li className={css.nav__item}><Link to='/404'>Not found</Link></li>
 //           </ul>
 //         </nav>
-//         <Header props='Hello'/>
-//         <main>
-//           {this.props.children}
-//         </main>
-//         <Footer />
+//         {this.props.children}
 //       </div>
 //     )
 //   }
