@@ -3,7 +3,6 @@ language: node_js
 node_js:
   - v6
   - v4
-sudo: true
 cache:
   directories:
     - node_modules
