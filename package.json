@@ -13,23 +13,17 @@
     "build": "echo '=> Building' && NODE_ENV=development webpack --config webpack.config.js",
     "serve": "echo '=> Starting DEV' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
     "prestart": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
-    "start": "echo '=> Starting Server' && nodemon --exec node server"
+    "start": "echo '=> Starting Server' && nodemon server"
   },
   "ava": {
     "babel": "inherit",
-    "source": [
-      "!public"
-    ]
+    "source": ["!public"]
   },
   "nyc": {
     "all": true,
     "require": "babel-register",
-    "include": [
-      "client"
-    ],
-    "extension": [
-      ".jsx"
-    ]
+    "include": ["client"],
+    "extension": [".jsx"]
   },
   "standard": {
     "ignore": [
@@ -40,15 +34,9 @@
     ]
   },
   "babel": {
-    "env": {
-      "development": {
-        "sourceMaps": "inline"
-      }
+    "env": {"development": {"sourceMaps": "inline"}
     },
-    "presets": [
-      "es2015",
-      "react"
-    ]
+    "presets": ["es2015", "react"]
   },
   "dependencies": {
     "body-parser": "^1.14.2",
