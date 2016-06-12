@@ -1,7 +1,8 @@
+import React from 'react'
 
 import css from './style.css'
 
-const AN = (props, ctx) => {
+const AN = ({props}) => {
   return (
     <div className={css.an}>
       <header className={css.an__header}>

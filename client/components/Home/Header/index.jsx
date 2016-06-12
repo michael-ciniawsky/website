@@ -1,6 +1,9 @@
+import React from 'react'
 
-export function Header (props) {
+const Header = ({props}) => {
   return (
-    <header className='header'>{props.header}</header>
+    <header className='header'>{props}</header>
   )
 }
+
+export default Header

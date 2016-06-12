@@ -4,35 +4,16 @@
 
 @component nav {
   display: flex;
+
   justify-content: space-around;
 
   width: 100vw;
-  height: 10vh;
-
-  background-color:  yellow;
+  height: 5vh;
 
   @descendent list {
     display: flex;
 
     width: 50%;
-  }
-
-  @descendent link {
-    display: flex;
-
-    width: 100%;
-  }
-
-  @descendent item {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-
-    flex: 1 1 25%;
-    flex-flow: row nowrap;
-
-
-    width: 100%;
   }
 
   @descendent left {
@@ -43,16 +24,27 @@
     align-self: flex-end;
   }
 
-  @descendent dropdown {
-    display: none;
-    flex-flow: column;
-  }
-}
+  @descendent link {
+    display: flex;
 
-@component dropdown {
-  display: none;
+    width: 100%;
+  }
 
   @descendent item {
+    display: flex;
+
+    align-content: center;
+    justify-content: space-between;
+
+    flex: 1 1 25%;
+    flex-flow: row nowrap;
+
+    width: 100%;
+  }
+
+  @descendent dropdown {
     display: none;
+
+    flex-flow: column;
   }
 }

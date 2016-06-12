@@ -5,11 +5,11 @@
 @component error {
   display: flex;
 
-  width: 100vw;
-  height: 100vh;
-
   align-items: center;
   justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
 
   background: linear-gradient(90deg, rgb(172, 81, 81), rgb(62, 39, 4));
   background-size: cover;

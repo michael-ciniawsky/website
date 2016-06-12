@@ -1,10 +1,11 @@
+import React from 'react'
 
 import css from './style.css'
 
-const Content = (props, ctx) => {
+const Content = ({props}) => {
   return (
     <div className={css.content}>
-      <Photo />
+      {props}
     </div>
   )
 }

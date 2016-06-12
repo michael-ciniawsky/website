@@ -7,9 +7,9 @@
 
   width: 100vw;
   height: auto;
+
   margin-top: 10%;
 
+  align-content: center;
   justify-content: center;
-
-  background-color: rgb(6, 98, 208);
 }

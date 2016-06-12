@@ -2,52 +2,42 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 
-// import Home from './containers/Home'
-// import Error from './containers/Error'
-// import CV from './containers/CV'
-//
+import Home from './containers/Home'
+import Error from './containers/Error'
+import CV from './containers/CV'
 
-import Header from './components/Home/Header'
-// import Footer from './components/Home/Footer'
+import css from './styles/index.css'
 
-import css from './index.css'
-
-// class App extends React.Component {
-//   render () {
-//     return (
-//       <div className={css.app}>
-//         <nav className={css.nav}>
-//           <ul className={css.nav__left}>
-//             <li className={css.nav__item}><Link to='/'>Root</Link></li>
-//             <li className={css.nav__item}><Link to='/home'>Home</Link></li>
-//             <li className={css.nav__item}><Link to='/cv'>Curriculum</Link></li>
-//             <li className={css.nav__item}><Link to='/404'>Not found</Link></li>
-//           </ul>
-//         </nav>
-//         {this.props.children}
-//       </div>
-//     )
-//   }
-// }
+const Nav = ({ props }) => {
+  return (
+    <nav className={css.nav}>
+      <ul className={css.nav__left}>
+        <li className={css.nav__item}><Link to='/'>Home</Link></li>
+        <li className={css.nav__item}><Link to='/cv'>CV</Link></li>
+      </ul>
+    </nav>
+  )
+}
 
 class App extends React.Component {
   render () {
     return (
       <div>
-        <h1>Test Stateless Components</h1>
+        <Nav />
+        <main className={css.app}>
+          {this.props.children}
+        </main>
       </div>
     )
   }
 }
 
-// render((
-//   <Router history={browserHistory}>
-//     <Route path='/' component={Root}>
-//       <Route path='/404' component={Error} />
-//       <Route path='/home' component={Home} />
-//       <Route path='/cv' component={CV} />
-//     </Route>
-//   </Router>),
-//   document.getElementById('root'))
-
-render(<App />, document.getElementById('root'))
+render((
+  <Router history={browserHistory}>
+    <Route path='/' component={App}>
+      <Route path='/404' component={Error} />
+      <IndexRoute component={Home} />
+      <Route path='/cv' component={CV} />
+    </Route>
+  </Router>),
+  document.getElementById('root'))

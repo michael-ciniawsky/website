@@ -2,14 +2,14 @@
     #FOOTER
 \* ------------------------------------ */
 
-@component footer {
+.footer {
   display: flex;
   justify-content: center;
 
-  color: white;
-  
+  color: red;
+
   font-size: 3rem;
   font-weight: 100;
 
-  letter-spacing: .1rem
+  letter-spacing: 0.1rem;
 }

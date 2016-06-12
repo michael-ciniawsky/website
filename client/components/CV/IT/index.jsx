@@ -1,7 +1,8 @@
+import React from 'react'
 
 import css from './style.css'
 
-const IT = (props, ctx) => {
+const IT = ({props}) => {
   return (
       <div id='it' className='section'>
         <div id='it-intro' className='slide'>
