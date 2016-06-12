@@ -3,17 +3,14 @@
   "version": "0.0.1",
   "description": "Website",
   "main": "server.js",
-  "engines": {
-    "node": ">=6",
-    "npm": ">=3"
-  },
+  "engines": {"node": ">=6","npm": ">=3"},
   "scripts": {
     "pretest": "echo '=> Linting' && standard",
-    "test": "echo '=> Testing' && nyc ava './client/**/*.test.js'",
+    "test": "echo '=> Testing' && nyc ava './**/*.test.js'",
     "build": "echo '=> Building' && NODE_ENV=development webpack --config webpack.config.js",
-    "serve": "echo '=> Starting DEV' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
+    "serve": "echo '=> Developing' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
     "prestart": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
-    "start": "echo '=> Starting Server' && nodemon server"
+    "start": "echo '=> Starting' && nodemon server"
   },
   "ava": {
     "babel": "inherit",
@@ -23,15 +20,10 @@
     "all": true,
     "require": "babel-register",
     "include": ["client"],
-    "extension": [".jsx"]
+    "extension": ["js", "jsx"]
   },
   "standard": {
-    "ignore": [
-      "client",
-      "server",
-      "public",
-      "server.js"
-    ]
+    "ignore": ["client", "server", "public", "server.js"]
   },
   "babel": {
     "env": {"development": {"sourceMaps": "inline"}
@@ -39,42 +31,38 @@
     "presets": ["es2015", "react"]
   },
   "dependencies": {
-    "body-parser": "^1.14.2",
-    "cookie-parser": "^1.4.1",
+    "body-parser": "^1.15.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.13.4",
-    "express-posthtml": "^1.0.3",
+    "express-posthtml": "^1.0.4",
     "express-session": "^1.12.1",
     "immutable": "^3.8.1",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1",
-    "react-redux": "^4.4.5",
-    "react-router": "^2.4.0",
-    "redux": "^3.5.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
-    "ava": "^0.14.0",
-    "babel-core": "^6.7.7",
+    "ava": "^0.15.2",
+    "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-register": "^6.7.2",
     "coveralls": "^2.11.9",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
-    "html-webpack-plugin": "^2.14.0",
-    "nyc": "^6.4.0",
+    "nyc": "^6.4.4",
     "postcss-bem": "^0.4.1",
-    "postcss-loader": "^0.8.2",
+    "postcss-loader": "^0.9.1",
     "posthtml-bem": "^0.2.2",
-    "standard": "^6.0.8",
+    "standard": "^7.1.2",
     "style-loader": "^0.13.0",
-    "stylefmt": "^3.2.1",
-    "stylelint": "^6.2.2",
+    "stylelint": "^6.5.1",
     "stylelint-config-standard": "^6.0.0",
-    "sugarss": "^0.1.3",
+    "sugarss": "^0.1.4",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.0",
+    "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-notifier": "^1.3.0"
   },
