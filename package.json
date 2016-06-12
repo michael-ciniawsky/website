@@ -2,15 +2,16 @@
   "name": "michael-ciniawsky.de",
   "version": "0.0.1",
   "description": "Website",
-  "main": "server.js",
+  "main": "server/",
   "engines": {"node": ">=6","npm": ">=3"},
   "scripts": {
     "pretest": "echo '=> Linting' && standard",
-    "test": "echo '=> Testing' && nyc ava './**/*.test.js'",
+    "test": "echo '=> Testing' && sudo nyc ava './**/*.test.js'",
+    "clean": "echo '=> Cleaning' && rm -rf public/*.js",
     "build": "echo '=> Building' && NODE_ENV=development webpack --config webpack.config.js",
     "serve": "echo '=> Developing' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
-    "prestart": "echo '=> Bundling' && NODE_ENV=production webpack --config webpack.config.js",
-    "start": "echo '=> Starting' && nodemon server"
+    "prestart": "npm run clean && npm run build",
+    "start": "echo '=> Starting' && sudo nodemon server/"
   },
   "ava": {
     "babel": "inherit",
@@ -23,10 +24,11 @@
     "extension": ["js", "jsx"]
   },
   "standard": {
-    "ignore": ["client", "server", "public", "server.js"]
+    "ignore": ["client", "server", "public"]
   },
   "babel": {
-    "env": {"development": {"sourceMaps": "inline"}
+    "env": {
+      "development": {"sourceMaps": "inline"}
     },
     "presets": ["es2015", "react"]
   },
@@ -51,20 +53,24 @@
     "babel-register": "^6.7.2",
     "coveralls": "^2.11.9",
     "css-loader": "^0.23.1",
+    "enzyme": "^2.3.0",
     "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "json-loader": "^0.5.4",
     "nyc": "^6.4.4",
     "postcss-bem": "^0.4.1",
     "postcss-loader": "^0.9.1",
     "posthtml-bem": "^0.2.2",
+    "posthtml-loader": "^0.9.0",
     "standard": "^7.1.2",
     "style-loader": "^0.13.0",
     "stylelint": "^6.5.1",
-    "stylelint-config-standard": "^6.0.0",
+    "stylelint-config-standard": "^8.0.0",
     "sugarss": "^0.1.4",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
-    "webpack-notifier": "^1.3.0"
+    "webpack-notifier": "^1.3.1"
   },
   "repository": {
     "type": "git",
