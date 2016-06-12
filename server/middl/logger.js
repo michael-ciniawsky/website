@@ -1,7 +1,7 @@
 'use strict'
 
-let morgan = require('morgan')
-
-let logger =  morgan('dev')
-
-exports = module.exports = logger
+// const morgan = require('morgan')
+//
+// const logger =  morgan('dev')
+//
+// module.exports = logger
