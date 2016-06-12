@@ -1,7 +1,7 @@
 module.exports = {
   loaders: [
     {
-      test: /\.html$/,
+      test: /\.(sml|html)$/,
       loader: 'html!posthtml?pack=standard'
     },
     {
@@ -15,6 +15,10 @@ module.exports = {
       query: {
         presets: ['es2015', 'react']
       }
+    },
+    {
+      test: /\.json$/,
+      loader: 'json'
     },
     {
       test: /\.(svg|png|jpg)$/,
