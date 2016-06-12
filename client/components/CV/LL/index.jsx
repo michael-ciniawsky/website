@@ -1,10 +1,10 @@
 import React from 'react'
 
-import css from './style.css'
+import css from './style.sss'
 
-const LL = ({props}) => {
+const LL = ({ props }) => {
   return (
-    <div className='css.ll'>
+    <div className={css.ll}>
       <h1 className={css.ll__title}>Lebenslauf</h1>
     </div>
   )

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import css from './style.css'
+import css from './style.sss'
 
-const Footer = ({props}) => {
+const Footer = ({ props }) => {
   return (
     <footer className={css.footer}>
-      <div>{props.test}</div>
-      <div>{props.test2}</div>
+      <div></div>
+      <div></div>
     </footer>
   )
 }

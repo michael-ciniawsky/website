@@ -2,9 +2,8 @@
     #ERROR
 \* ------------------------------------ */
 
-@component error {
+@block error
   display: flex;
-
   align-items: center;
   justify-content: center;
 
@@ -14,11 +13,8 @@
   background: linear-gradient(90deg, rgb(172, 81, 81), rgb(62, 39, 4));
   background-size: cover;
 
-  @descendent text {
+  @elem text
     display: flex;
-
-    flex-direction: column;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-  }
-}

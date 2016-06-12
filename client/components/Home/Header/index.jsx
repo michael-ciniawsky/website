@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Header = ({props}) => {
+import $ from './style.sss'
+
+const Header = () => {
   return (
-    <header className='header'>{props}</header>
+    <header className={$.header}></header>
   )
 }
 

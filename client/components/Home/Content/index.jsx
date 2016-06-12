@@ -1,12 +1,10 @@
 import React from 'react'
 
-import css from './style.css'
+import $ from './style.sss'
 
-const Content = ({props}) => {
+const Content = () => {
   return (
-    <div className={css.content}>
-      {props}
-    </div>
+    <div className={$.content}></div>
   )
 }
 

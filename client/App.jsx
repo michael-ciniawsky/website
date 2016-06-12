@@ -6,14 +6,21 @@ import Home from './containers/Home'
 import Error from './containers/Error'
 import CV from './containers/CV'
 
-import css from './styles/index.css'
+import $ from './styles/index.sss'
 
 const Nav = ({ props }) => {
   return (
-    <nav className={css.nav}>
-      <ul className={css.nav__left}>
-        <li className={css.nav__item}><Link to='/'>Home</Link></li>
-        <li className={css.nav__item}><Link to='/cv'>CV</Link></li>
+    <nav className={$.nav}>
+      <ul className={$.nav__left}>
+        <li className={$.nav__item}>
+          <Link to='/'>Home</Link>
+        </li>
+        <li className={$.nav__item}>
+          <Link to='/cv'>Curriculum Vitae</Link>
+        </li>
+        <li className={$.nav__item}>
+          <Link to='/blog'>Blog</Link>
+        </li>
       </ul>
     </nav>
   )
@@ -24,7 +31,7 @@ class App extends React.Component {
     return (
       <div>
         <Nav />
-        <main className={css.app}>
+        <main className={$.root}>
           {this.props.children}
         </main>
       </div>

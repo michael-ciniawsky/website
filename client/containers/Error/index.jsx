@@ -1,12 +1,12 @@
 import React from 'react'
 
-import css from './style.css'
+import $ from './style.sss'
 
 class Error extends React.Component {
   render () {
     return (
-      <div className={css.error}>
-        <section className={css.error__text}>
+      <div className={$.error}>
+        <section className={$.error__text}>
           <h1>404 | Page Not Found</h1>
           <p>Sorry, but the page you were trying to view does not exist.</p>
         </section>

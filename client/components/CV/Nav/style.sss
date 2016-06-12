@@ -1,38 +1,32 @@
 /* ------------------------------------ *\
-       #NAV
+    #NAV
 \* ------------------------------------ */
 
-@component nav {
+@block nav
   display: flex;
-
   justify-content: space-around;
 
   width: 100vw;
   height: 5vh;
 
-  @descendent list {
+  @elem list
     display: flex;
 
     width: 50%;
-  }
 
-  @descendent left {
+  @elem left
     align-self: flex-start;
-  }
 
-  @descendent right {
+  @elem right
     align-self: flex-end;
-  }
 
-  @descendent link {
+  @elem link
     display: flex;
 
     width: 100%;
-  }
 
-  @descendent item {
+  @elem item
     display: flex;
-
     align-content: center;
     justify-content: space-between;
 
@@ -40,11 +34,8 @@
     flex-flow: row nowrap;
 
     width: 100%;
-  }
 
-  @descendent dropdown {
+  @elem dropdown
     display: none;
 
     flex-flow: column;
-  }
-}

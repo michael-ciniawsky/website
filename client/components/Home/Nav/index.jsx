@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-import css from './style.css'
+import $ from './style.sss'
 
-const Nav = ({props}) => {
+const Nav = ({ props }) => {
   return (
-    <nav className={css.nav}>
+    <nav className={$.nav}>
       <ul>
         {props.map((link) => {
           return (
-            <li className={css.nav__link} key={link.id}>
+            <li className={$.nav__link} key={link.id}>
               <Link to='/'>{link.name}</Link>
             </li>
           )

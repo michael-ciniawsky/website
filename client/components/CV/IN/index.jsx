@@ -1,8 +1,8 @@
 import React from 'react'
 
-import css from './style.css'
+import css from './style.sss'
 
-const IN = ({props}) => {
+const IN = ({ props }) => {
   return (
     <div className={css.in}>
       <header className={css.in__header}>

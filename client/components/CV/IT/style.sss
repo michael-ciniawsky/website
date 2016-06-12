@@ -2,68 +2,60 @@
    #IT
 \* ------------------------------------ */
 
-#html {
+#html
   background: linear-gradient(115deg, orange, red);
-}
 
-#svg {
+
+#svg
   background: linear-gradient(115deg, brown, gold);
-}
 
-#css {
+
+#css
   background: linear-gradient(115deg, darkturquoise, midnightblue);
-}
 
-#js {
+
+#js
   background: linear-gradient(115deg, yellow, black);
-}
 
-#node {
+
+#node
   background: linear-gradient(115deg, green, black);
-}
 
-#php {
+
+#php
   background: linear-gradient(115deg, purple, black);
-}
 
-#it {
+
+#it
   background: linear-gradient(115deg, blue, black);
-}
 
-@component it {
-  @descendant slide {
+
+@component it
+  @elem slide
     display: flex;
     align-items: center;
 
     width: 90%;
     height: 90%;
 
-    background: transparent linear-gradient(135deg, #ca2091 0px, #a041fa 20%, #3f65fb 50%, #0fcbfa 80%, #0fe6fa 100%) repeat scroll 0% 0%;
+    background: transparent linear-gradient(135deg, #ca2091 0%, #a041fa 20%, #3f65fb 50%, #0fcbfa 80%, #0fe6fa 100%) repeat scroll 0% 0%;
     opacity: 0.4;
 
-  }
-
-  @descendant header {
+  @elem header
     display: flex;
     align-items: center;
 
     width: 100%;
 
-  }
-
-  @descendent title {
+  @elem title
     margin: 0 auto;
     padding: 1rem;
     border-top: 0.1rem solid white;
     border-bottom: 0.1rem solid white;
 
     color: white;
-
     font-size: 3rem;
     font-weight: 100;
     text-align: center;
     word-spacing: 0.2rem;
     letter-spacing: 0.2rem;
-  }
-
-}

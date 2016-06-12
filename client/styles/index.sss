@@ -1,12 +1,14 @@
-.app {
+.root
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: rgb(64, 208, 95);
-}
 
-.nav {
+.main
+  margin-top: 5%;
+
+.nav
   display: flex;
 
   justify-content: center;
@@ -16,9 +18,8 @@
   height: 5vh;
 
   background-color: rgba(75, 75, 75, 0.6);
-}
 
-.nav__left {
+.nav__left
   display: flex;
 
   align-self: flex-start;
@@ -28,9 +29,8 @@
   width: 50%;
 
   background-color: rgb(121, 160, 189);
-}
 
-.nav__item {
+.nav__item
   flex: 1 1 25%;
 
   align-self: center;
@@ -42,12 +42,6 @@
   font-weigth: 100;
 
   list-style: none;
-}
 
-.nav__item:hover {
+.nav__item:hover
   background-color: rgba(200, 200, 200, 0.8);
-}
-
-.main {
-  margin-top: 5%;
-}

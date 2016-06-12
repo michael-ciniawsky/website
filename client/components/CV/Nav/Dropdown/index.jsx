@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-import $ from './style.css'
+import $ from './style.sss'
 
-const Dropdown = ({links}) => {
+const Dropdown = ({ links }) => {
   return (
     <ul className={$.dropdown}>
       {links.map((link) => {
