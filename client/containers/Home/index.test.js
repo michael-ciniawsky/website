@@ -1,5 +1,8 @@
 import test from 'ava'
+import { shallow } from 'enzyme'
 
-test('It should render the home view', t => {
-  console.log('Home')
+import Container from './index'
+
+test('Container <Home /> - Home', (t) => {
+  shallow(Container)
 })

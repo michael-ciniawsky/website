@@ -5,21 +5,21 @@ import Dropdown from './Dropdown'
 
 import $ from './style.sss'
 
-const Nav = ({ links, text }) => {
+const Nav = ({ links, ctx }) => {
   return (
     <nav className={$.nav}>
       <ul className={$.nav__list && $.nav__left}>
         <li className={$.nav__item}>
-          <Link className={$.nav__link} to='#an'>{text.an}</Link>
+          <Link className={$.nav__link} to='#an'>{ctx.an}</Link>
         </li>
 
         <li className={$.nav__item}>
-          <Link className={$.nav__link} to='#ll'>{text.ll}</Link>
+          <Link className={$.nav__link} to='#ll'>{ctx.ll}</Link>
           <Dropdown links={links.ll} />
         </li>
 
         <li className={$.nav__item}>
-          <Link className={$.nav__link} to='#it'>{text.it}</Link>
+          <Link className={$.nav__link} to='#it'>{ctx.it}</Link>
           <Dropdown links={links.it} />
         </li>
       </ul>

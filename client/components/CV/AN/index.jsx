@@ -1,22 +1,25 @@
 import React from 'react'
 
-import css from './style.sss'
+import $ from './style.sss'
 
-const AN = ({ props }) => {
+const AN = () => {
   return (
-    <div className={css.an}>
-      <header className={css.an__header}>
-        <h2 className={css.an__title}>Anschreiben</h2>
+    <div className={$.an}>
+      <header className={$.an__header}>
+        <h2 className={$.an__title}>Anschreiben</h2>
       </header>
 
-      <article className={css.an__article}>
-
-        <header className={css.article__header}>
-          <h2 className={css.article__title}>Fachinformtatiker Anwendungsentwicklung</h2>
+      <article className={$.an__article}>
+        <header className={$.article__header}>
+          <h2 className={$.article__title}>
+            Fachinformtatiker Anwendungsentwicklung
+          </h2>
         </header>
 
-        <section className={css.article__content}>
-          <p>Bewerbung zum Fachinformatiker Anwendungsentwicklung</p>
+        <section className={$.article__content}>
+          <p>
+            Bewerbung zum Fachinformatiker Anwendungsentwicklung
+          </p>
         </section>
       </article>
     </div>

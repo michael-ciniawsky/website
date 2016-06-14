@@ -7,13 +7,13 @@ import LL from '../../components/CV/LL'
 import IT from '../../components/CV/IT'
 
 import $ from './style.sss'
-import ctx from './index.json'
+import { links, content } from './index.json'
 
 class CV extends React.Component {
   render () {
     return (
       <div className={$.cv}>
-        <Nav links={ctx.links} text={ctx.content} />
+        <Nav links={links} content={content}/>
         <IN />
         <AN />
         <LL />
@@ -21,11 +21,6 @@ class CV extends React.Component {
       </div>
     )
   }
-}
-
-CV.propTypes = {
-  it: React.PropTypes.object.isRequired,
-  ll: React.PropTypes.object.isRequired
 }
 
 export default CV

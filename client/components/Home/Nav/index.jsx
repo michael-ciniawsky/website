@@ -3,11 +3,11 @@ import { Link } from 'react-router'
 
 import $ from './style.sss'
 
-const Nav = ({ props }) => {
+const Nav = ({ links }) => {
   return (
     <nav className={$.nav}>
       <ul>
-        {props.map((link) => {
+        {links.map((link) => {
           return (
             <li className={$.nav__link} key={link.id}>
               <Link to='/'>{link.name}</Link>

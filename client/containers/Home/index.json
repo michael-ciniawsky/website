@@ -1,6 +1,7 @@
 {
-  "nav": [
+  "links": [
     {"id": 1, "name": "Home"},
-    {"id": 2, "name": "CV"}
+    {"id": 2, "name": "Blog"},
+    {"id": 3, "name": "Curriculum Vitae"}
   ]
 }
