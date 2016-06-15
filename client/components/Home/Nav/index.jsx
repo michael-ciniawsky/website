@@ -6,10 +6,10 @@ import $ from './style.sss'
 const Nav = ({ links }) => {
   return (
     <nav className={$.nav}>
-      <ul>
+      <ul className= {$.nav__inner}>
         {links.map((link) => {
           return (
-            <li className={$.nav__link} key={link.id}>
+            <li className={$.nav__item} key={link.id}>
               <Link to='/'>{link.name}</Link>
             </li>
           )

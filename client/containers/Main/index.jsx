@@ -4,7 +4,7 @@ import $ from './style.sss'
 
 const Content = ({ page }) => {
   return (
-    <main className={$.app__main}>
+    <main className={$.main}>
       {page}
     </main>
   )
