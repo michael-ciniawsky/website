@@ -6,7 +6,7 @@
   "engines": {"node": ">=6","npm": ">=3"},
   "scripts": {
     "pretest": "echo '=> Linting' && standard",
-    "test": "echo '=> Testing' && sudo nyc ava './**/*.test.js'",
+    "test": "echo '=> Testing' && sudo nyc ava './**/tests.js'",
     "clean": "echo '=> Cleaning' && rm -rf .nyc_output coverage public/*.js",
     "build": "echo '=> Building' && NODE_ENV=development webpack --config webpack.config.js",
     "serve": "echo '=> Developing' && NODE_ENV=development webpack-dev-server --config webpack.server.js",
