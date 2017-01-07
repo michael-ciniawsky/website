@@ -1,53 +1,28 @@
-[![Node][node]][node-url]
-[![Dependencies][deps]][deps-url]
-[![DevDependencies][devdeps]][devdeps-url]
-[![Standard Code Style][style]][style-url]
+[![node][node]][node-url]
+[![deps][deps]][deps-url]
+[![code style][style]][style-url]
 
-# [Website](http://michael-ciniawsky.de)
-
-## Status
-
-| Branch               | Build                     | Coverage                 |
-|:---------------------|:-------------------------:|:------------------------:|
-|  Master              | ![travis]                 | ![cover]                 |
-|  Develop             | ![travis-dev]             | ![cover-dev]             |
-
-## Setup
-
-#### Install
+<div align="center">[
+  <a href="http://michael-ciniawsky.de">
+   <h1>Website<h1>
+  </a>
+</div>
 
 ```bash
-$ npm i
+npm i
 ```
 
-#### Test
+<h2 align="center">Develop</h2>
 
 ```bash
-$ npm test
+npm start
 ```
 
-#### Start
+<h2 align="center">Production</h2>
 
 ```bash
-$ npm start
+npm run build
 ```
-
-## Develop
-
-#### Build
-
-```bash
-$ npm run build
-```
-
-#### Serve
-
-```bash
-$ npm run serve
-```
-# License
-
-**MIT**
 
 [node]: https://img.shields.io/node/v/gh-badges.svg
 [node-url]: https://nodejs.org
@@ -55,20 +30,5 @@ $ npm run serve
 [deps]: https://david-dm.org/michael-ciniawsky/website.svg
 [deps-url]: https://david-dm.org/michael-ciniawsky/website
 
-[devdeps]: https://david-dm.org/michael-ciniawsky/website/dev-status.svg
-[devdeps-url]: https://david-dm.org/michael-ciniawsky/website#info=devDependencies
-
 [style]: https://img.shields.io/badge/code%20style-standard-yellow.svg
 [style-url]: http://standardjs.com/
-
-[travis]:https://travis-ci.org/michael-ciniawsky/website.svg?branch=master
-[travis-url]:https://travis-ci.org/michael-ciniawsky/website?branch=master
-
-[travis-dev]: http://img.shields.io/travis/michael-ciniawsky/website.svg?branch=develop
-[travis-dev-url]: https://travis-ci.org/michael-ciniawsky/website?branch=develop
-
-[cover]: https://coveralls.io/repos/github/michael-ciniawsky/website/badge.svg?branch=master
-[cover-url]: https://coveralls.io/github/michael-ciniawsky/website?branch=master
-
-[cover-dev]: https://coveralls.io/repos/github/michael-ciniawsky/website/badge.svg?branch=develop
-[cover-dev-url]: https://coveralls.io/github/michael-ciniawsky/website?branch=develop
