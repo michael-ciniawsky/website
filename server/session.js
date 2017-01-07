@@ -1,16 +1,14 @@
 // ------------------------------------
-// #SESSION
+// # SESSION
 // ------------------------------------
 
-'use strict'
+const Session = require('express-session')
 
-let Session = require('express-session')
-
-let session = Session({
+const session = Session({
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: true,
   cookie: { secure: true }
 })
 
-exports = module.exports = session
+module.exports = session
