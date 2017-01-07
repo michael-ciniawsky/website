@@ -1,10 +1,9 @@
-const path = require('path')
-
 module.exports = {
-  cache: true,
-  context: path.join(process.cwd(), 'client'),
+  target: 'web',
+  cache: false,
+  context: `${process.cwd()}/client`,
+  devtool: 'eval-source-map',
   resolve: {
-    extensions: ['', '.js', '.jsx']
-  },
-  devtool: 'source-map'
+    extensions: ['.js', '.jsx']
+  }
 }

@@ -5,9 +5,6 @@
 
 # NODEJS
 
-.nyc_output
-coverage
-
 npm-debug.log
 
 node_modules
@@ -16,4 +13,5 @@ bower_components
 
 # APP
 
-public
+public/*.js
+public/*.css

@@ -1,25 +1,20 @@
-'use strict'
-
-const path = require('path')
-
-const Webpack = require('webpack')
-const WebpackNotify = require('webpack-notifier')
-// const WebpackPluginHTML = require('html-webpack-plugin')
+const NotifyPlugin = require('webpack-notifier')
+const { CommonsChunkPlugin } = require('webpack').optimize
+const { NoErrorsPlugin, HotModuleReplacementPlugin } = require('webpack')
 
 module.exports = [
-  // new WebpackHTML({
-  //   title: 'DEV',
-  //   template: path.join(process.cwd(), './webpack/plugins', 'templates/index.html'),
-  //   filename: 'index.html',
-  //   chunks: ['vendor', 'index'],
-  //   inject: 'body'
-  // }),
-  new WebpackNotify(),
-  new Webpack.optimize.CommonsChunkPlugin({
+  new NotifyPlugin(),
+  new NoErrorsPlugin(),
+  new HotModuleReplacementPlugin(),
+  new CommonsChunkPlugin({
     name: 'vendor',
     filename: '[name].js',
     chunks: ['App'],
-    minChunks: 2
+    minChunks: Infinity
   }),
-  new Webpack.HotModuleReplacementPlugin()
+  // UglifyJsPlugin({
+  //   compress: { warnings: false },
+  //   output: { comments: false },
+  //   sourceMap: false
+  // }),
 ]
