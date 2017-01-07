@@ -1,12 +1,15 @@
-[![node][node]][node-url]
 [![deps][deps]][deps-url]
+[![devs][devs]][devs-url]
+[![tests][tests]][tests-url]
 [![code style][style]][style-url]
 
-<div align="center">[
+<div align="center">
   <a href="http://michael-ciniawsky.de">
    <h1>Website<h1>
   </a>
 </div>
+
+<h2 align="center">Install</h2>
 
 ```bash
 npm i
@@ -17,8 +20,6 @@ npm i
 ```bash
 npm start
 ```
-
-<h2 align="center">Production</h2>
 
 ```bash
 npm run build
