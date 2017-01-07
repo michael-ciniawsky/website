@@ -6,13 +6,22 @@ import Content from '../../components/Home/Content'
 import Footer from '../../components/Home/Footer'
 
 import $ from './style.sss'
-import { links } from './index.json'
 
 class Home extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {}
+  }
+
+  handleClick (state) {
+    console.log(state)
+  }
+
   render () {
     return (
       <div className={$.home}>
-        <Nav links={links} />
+        <Nav />
         <Header />
         <Content />
         <Footer />

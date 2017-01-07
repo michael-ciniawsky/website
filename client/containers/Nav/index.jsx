@@ -11,9 +11,6 @@ const Nav = () => {
           <Link to='/'>Home</Link>
         </li>
         <li className={$.nav__item}>
-          <Link to='/blog'>Blog</Link>
-        </li>
-        <li className={$.nav__item}>
           <Link to='/cv'>Curriculum Vitae</Link>
         </li>
       </ul>

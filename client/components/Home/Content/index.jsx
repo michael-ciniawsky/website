@@ -2,10 +2,10 @@ import React from 'react'
 
 import $ from './style.sss'
 
-const Content = ({ page }) => {
+const Content = () => {
   return (
-    <main className={$.app__main}>
-      {page}
+    <main className={$.main}>
+      <h1>Hello World!</h1>
     </main>
   )
 }

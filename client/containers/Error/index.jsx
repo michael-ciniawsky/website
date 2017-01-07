@@ -1,15 +1,13 @@
 import React from 'react'
 
 import $ from './style.sss'
-import { title, message } from './index.json'
 
 class Error extends React.Component {
   render () {
     return (
       <div className={$.error}>
         <section className={$.error__text}>
-          <h1>{title}</h1>
-          <p>{message}</p>
+          <h1>404</h1>
         </section>
       </div>
     )
