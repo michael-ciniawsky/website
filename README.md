@@ -25,11 +25,17 @@ npm start
 npm run build
 ```
 
-[node]: https://img.shields.io/node/v/gh-badges.svg
-[node-url]: https://nodejs.org
-
 [deps]: https://david-dm.org/michael-ciniawsky/website.svg
 [deps-url]: https://david-dm.org/michael-ciniawsky/website
+
+[devs]: https://david-dm.org/michael-ciniawsky/website.svg?info=devDependencies
+[devs-url]: https://david-dm.org/michael-ciniawsky/website?info=devDependencies
+
+[tests]: http://img.shields.io/travis/michael-ciniawsky/website.svg
+[tests-url]: https://travis-ci.org/michael-ciniawsky/website
+
+[cover]: https://coveralls.io/repos/github/michael-ciniawsky/website/badge.svg
+[cover-url]: https://coveralls.io/github/michael-ciniawsky/website
 
 [style]: https://img.shields.io/badge/code%20style-standard-yellow.svg
 [style-url]: http://standardjs.com/
